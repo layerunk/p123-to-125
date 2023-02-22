@@ -1,6 +1,6 @@
 #BADCOPYRIGHT{
     position:fixed;
-    background-color: rgb(249, 249, 71);
+    background-color: rgb(117, 223, 60);
     border: 5px line black;
     width: 100%;
     text-align: center;
@@ -9,9 +9,10 @@
 
 #title{
     padding: 5px;
-    line-height: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
     width:100%;
-    background-color: rgb(249, 249, 71);
+    background-color: rgb(117, 223, 60);
     font-family: 'Lora', serif;
     font-size: 38px;
 }
@@ -28,5 +29,9 @@ body{
 
 #note{
     font-family: 'Noto Serif', serif;
+    color:black;
 }
 
+body{
+    background-color: rgba(30, 255, 79, 0.769);
+}

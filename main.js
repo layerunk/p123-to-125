@@ -1,12 +1,11 @@
-
 function setup(){
-    video = createCapture(VIDEO);
-    video.size(600, 300);
-    video.position(100, 200);
-    canvas = createCanvas(600, 300);
-    canvas.position(700, 200);
-    modale = ml5.poseNet(video, consoler);
-    modale.on('pose' , result);
+  video = createCapture(VIDEO);
+  video.size(600, 300);
+  video.position(100, 250);
+  canvas = createCanvas(600, 300);
+  canvas.position(700, 250);
+  modale = ml5.poseNet(video, consoler);
+  modale.on('pose' , result);
 }
 
 x=0;
@@ -17,9 +16,9 @@ difference=0;
 
 function draw(){
     background("white");
-    fill("grey");
-    stroke("black");
-    square(x, y, difference);
+    textSize(difference);
+    fill("black");
+    text("Shin-Chan", x, y);
 }
 
 function consoler(){
